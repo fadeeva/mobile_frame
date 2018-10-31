@@ -1,4 +1,12 @@
-body { background: #313131; }
+@font-face {
+    font-family: "Ubuntu Medium";
+    src: url("../fonts/Ubuntu-M.ttf");
+}
+
+body { background: #313131;
+    font-family: "Ubuntu Medium";
+    font-size: 24px;
+}
 
 #frame_cnt {
 	position: relative;
@@ -27,13 +35,8 @@ body { background: #313131; }
     
     position: absolute;
     z-index: 2;
-    top: 0px;
+    top: 90px;
 }
 
-#canvas {
-    width: 360px;
-    height: 640px;
-    
-/*	background: #b8b5a5;*/
-}
+#canvas { background: #b8b5a5; }
 
