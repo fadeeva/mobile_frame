@@ -6,10 +6,51 @@
     <title>Mobile Frame</title>
 </head>
 <body>
-<div id="frame_cnt">
+<header>
+    <nav>
+        <ul id="resolutions">
+            <li class="active">360x640</li>
+            <li>720x1280</li>
+            <li>480x800</li>
+            <li>540x960</li>
+        </ul>
+        
+        <div id="orientation_btn_ctn">
+            <svg id="orientation_btn">
+                
+        
+                <linearGradient id="gradient">
+                    <stop offset="0%" stop-color="#313131" stop-opacity="0"/>
+                    <stop offset="70%" stop-color="#706d5e"/>
+                </linearGradient>
+
+                <path d="M 0 0
+                        L 0 50
+                        L 130 50
+                        A 25 25 0 0 0 130 0 
+                        Z" 
+                      fill="url(#gradient)"/>
+                
+                <text x="30" y="32" class="orientation_var">Portrait</text>
+                
+                <circle cx="130" cy="25" r="25" fill="#b8b5a5"/>
+<!--
+            <path d="M 25 0
+                    A 25 25 0 0 0 25 50
+                    L 155 50
+                    L 155 0
+                    Z" 
+                   stroke="#b8b5a5" fill="transparent" stroke-width="1"/>
+-->
+            </svg>
+        </div>
+    </nav>
+</header>
+<main>
     <div id="svg_cnt">
         <svg id="mobile_frame">
            
+<!--
            <path d="M 245 10
                     A 35 35 0 0 0 215 45
                     L 215 785
@@ -20,6 +61,9 @@
                     A 35 35 0 0 0 575 10
                     Z" 
            stroke="#b8b5a5" fill="transparent" stroke-width="1"/>
+-->
+           <rect x="215" y="10" rx="35" ry="35" 
+               width="390" height="810" stroke="#b8b5a5" fill="transparent" stroke-width="1"/>
            
            <rect width="4" height="140" x="211" y="140"  fill="transparent" stroke-width="1" stroke="#b8b5a5"/>
            <rect width="4" height="60" x="605" y="220"  fill="transparent" stroke-width="1" stroke="#b8b5a5"/>
@@ -50,7 +94,7 @@
     <div id="canvas_cnt">
         <canvas id="canvas" width="360" height="640">Your browser doesn't support canvas.</canvas>
     </div>
-</div>
+</main>
 <script src="js/mobile_frame.js"></script>
 </body>
 </html>

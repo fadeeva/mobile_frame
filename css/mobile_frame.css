@@ -3,12 +3,68 @@
     src: url("../fonts/Ubuntu-M.ttf");
 }
 
-body { background: #313131;
+body { 
+    background: #313131;
     font-family: "Ubuntu Medium";
-    font-size: 24px;
+    font-size: 18px;
 }
 
-#frame_cnt {
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#resolutions {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    list-style: none;
+    margin: 25px 0 30px 0;
+    padding: 0;
+}
+
+#resolutions li {
+    color: #706d5e;
+    background: #b8b5a5;
+    border-radius: 40px;
+    width: 105px;
+    text-align: center;
+    margin: 0 12px 0 12px;
+    padding: 8px 0;
+    cursor: pointer;
+    
+/*    box-shadow: 0 0 0 rgba(184, 181, 165, 0.9);*/
+}
+
+#resolutions li.active {
+    color: #b8b5a5;
+    background: #706d5e;
+    cursor: default;
+}
+
+#resolutions li:hover {
+	box-shadow: 0 0 20px rgba(20, 19, 14, 0.9);
+    transition: box-shadow 0.3s linear;
+}
+
+#orientation_btn_ctn {
+	display: flex;
+    justify-content: center;
+    
+    margin: 0 0 30px 0; 
+}
+
+#orientation_btn {
+	width: 155px;
+    height: 50px;
+}
+
+.orientation_var {
+	fill: #b8b5a5;
+}
+
+main {
 	position: relative;
 
     display: flex;
@@ -27,7 +83,7 @@ body { background: #313131;
 	width: 820px;
     height: 860px;
     
-    border: 1px solid #b8b5a5;
+/*    border: 1px solid #b8b5a5;*/
 }
 
 #canvas_cnt {
